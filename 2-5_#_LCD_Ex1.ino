@@ -56,9 +56,9 @@ void setup()
    lcd.begin(20, 2);
    lcd.begin(20, 2);
    
-   lcd.createChar(1,two);
-   lcd.setCursor(0,0);
-   lcd.print(char(0x01));
+   lcd.createChar(1,two);//自建字型two陣列存入byte(1)
+   lcd.setCursor(0,0);//lcd.setCursor(行,列);設定游標位置
+   lcd.print(char(0x01));//lcd.print("1234");LCD顯示1234
    
    lcd.createChar(2,ele);
    lcd.setCursor(2,0);
